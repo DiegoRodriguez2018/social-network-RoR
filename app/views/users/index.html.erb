@@ -1,3 +1,14 @@
-<p> <%= @message %> <%=@user.name%> <%=@user.lastname%> </p>
+<p class="jumbotron"> <%= @message %> <%=@user.name%> <%=@user.lastname%> </p>
+<%= image_tag "man.png", alt:"user's avatar", class:"user-avatar"%>
 
-<%= link_to 'Edit', edit_user_path(@user) %>
+<span> Name: <%= @user.name %> </span>
+<span> Lastname: <%= @user.lastname %> </span>
+<span> Email: <%= @user.email %> </span>
+
+<%= link_to 'Edit', edit_user_path(@user), class:"btn btn-primary" %>
+
+
+
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
