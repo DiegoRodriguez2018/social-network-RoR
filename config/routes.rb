@@ -5,6 +5,5 @@ Rails.application.routes.draw do
 
   root 'users#index'
   get '/profile', to: 'users#index'
-  resources :posts
   resources :users
 end

@@ -14,10 +14,24 @@
 
  @import "bootstrap";
 
-
  .user-avatar {
   height: 30vh;
   border: 1px solid grey;
   border-radius: 4px;
   padding: .5rem;
+}
+
+.chat-room {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+
+  width: 80vw;
+  height: 60vh;
+}
+.chat-input{
+  margin-top: 1rem;
+  padding: 1rem;
+  background:grey;
+  width: 80vw;
+  height: 1rem;
 }

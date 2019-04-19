@@ -2,8 +2,8 @@
 
 one:
   content: MyString
-  references: 
+  user: one
 
 two:
   content: MyString
-  references: 
+  user: two
