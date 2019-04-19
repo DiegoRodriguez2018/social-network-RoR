@@ -12,16 +12,16 @@
   <body>
 
   <div class="d-flex flex-column justify-content-center align-items-center h-100">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
       <% if user_signed_in? %>
-        <div> <%= current_user.name %> <%= current_user.lastname %> | 
-        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>    
-        </div>
+      <nav class="navbar navbar-dark bg-primary ">
+        <%= link_to 'Chat Room', messages_path, class:"navbar-brand"%>
+        <%= link_to 'Profile', profile_path, class:"navbar-brand" %>
+        <%= link_to('Logout', destroy_user_session_path, method: :delete, class:"navbar-brand") %>    
+      </nav>
       <% end %>
-    </nav>
+    <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
   </div>
   </body>
 </html>

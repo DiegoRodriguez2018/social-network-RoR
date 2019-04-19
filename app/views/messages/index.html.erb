@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chat Room</h1>
+
+<div class="chat-room">
+  <table>
+    <thead>
+    </thead>
+    <tbody>
+      <% @messages.each do |message| %>
+        <tr>
+          <td><%= message.user.name %>: </td>
+          <td><%= message.content %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<%=  render 'chat_input_form' %>

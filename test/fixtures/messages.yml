@@ -2,10 +2,8 @@
 
 one:
   content: MyString
-  likes: 1
   user: one
 
 two:
   content: MyString
-  likes: 1
   user: two
