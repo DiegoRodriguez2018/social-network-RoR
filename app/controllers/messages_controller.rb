@@ -25,13 +25,13 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.json
   def create
-    @message = current_user.messages.build(message_params)
+    message = current_user.messages.build(message_params)
     # @message = Message.new(message_params)
     respond_to do |format|
-      if @message.save
-        # action cable?
-
-
+      if message.save
+        # Sending data to the channel
+        data = {content:message.content, user:message.user.name}      
+        ActionCable.server.broadcast 'room_channel', data
       end
     end
   end
